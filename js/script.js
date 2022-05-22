@@ -3,6 +3,7 @@ var g = function(id){
 	return document.getElementById(id);
 }
 
+
 /* 时间轴对象构造器 */
 var Timeline = function(){
 	this.order = []; // 动画序列
@@ -54,6 +55,7 @@ s2.add(1, function(){
 },'粽子停止抖动，左侧文字入场');
 
 // 绳子的解开动画
+
 s2.add(100, function(){
 	g('c_shengzi').className = 'c_shengzi sz2';
 }, '绳子解开步骤1');
@@ -86,6 +88,7 @@ s2.add(3000, function(){
 }, '粽叶完全展开，粽子底页进来，文字进来');
 
 // 粽子肉旋转动画
+
 s3.add(1000,function(){
 	g('c_zongzi_meat').className = 'c_zongzi_meat in v1';
 },'粽子肉旋转');
@@ -135,6 +138,7 @@ s3.add(5000,function(){
 
 // s1.start();
 
+//注释选项
 // 图片加载器
 var imgs = ['img/zzr_1.png','img/zzr_2.png','img/zzr_3.png','img/zzr_4.png'];
 
